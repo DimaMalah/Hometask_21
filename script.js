@@ -3,7 +3,7 @@
 // getFactorial(3)  в данном случае должна вернуть факториал числа 3! = 3 * 2 * 1
 
 {
-	getFactorial = ((num) => {
+	let getFactorial = ((num) => {
 		return num === 0 ? 1 : num *= getFactorial(num - 1)
 	});
 	console.log(getFactorial(3));
@@ -17,7 +17,7 @@
 // pow(num, degree)
 
 {
-	powFunc = ((num, pow) => {
+	let powFunc = ((num, pow) => {
 		if (pow > 1) {
 			return num * powFunc(num, pow - 1)
 		} else if (pow === 1) {
@@ -42,7 +42,7 @@
 // окажется равным нулю.
 
 {
-	sumFunk = ((a, b) => {
+	let sumFunk = ((a, b) => {
 		if (b !== 0) {
 			a++
 			a = sumFunk(a, b - 1)
